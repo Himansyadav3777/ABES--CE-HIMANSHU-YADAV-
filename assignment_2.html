@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    
-    <form>
+    <style>
+        #nav {
+            display: flex;
+            height: 60px;
+            background-color: #3B82F6;
+            width: auto;
+            border: 2px solid;
+
+        }
         
+    </style>
+</head>
+
+<body>
+    <!--  navbar -->
+
+    <div id="nav">
+        <div style="width: 40px; height: 40px;  padding-left: 40px;">
+            <img src="himpic.png" style="width: 40px; height: 40px;   border-radius: 360px; margin-top: 10px;">
+        </div>
+
+        <div style="width: 200px; height: 40px; margin-left: 50px; font-size: 20px;">
+            <h3 style="margin-top: 10px;"> BOOK SEET</h3>
+        </div>
+    </div>
+
+    <!--  body -->
+
+    <h1 style="text-align: center; font-size: 30px;"> * Wellcome to my bus traveral's *</h1>
+
+
+
+    <div
+        style=" height: 550px; width: 800px; background-color: aqua; margin: auto; display: flex; border-radius: 30px;">
+        <div
+            style="height: 400px; width: 300px; background-color: #6533f3; border: 2px solid; padding: 20px; margin-left: 20px; margin-top: 40px; border-radius: 30px;">
+            <b style="font-size: 25px;"> User datils</b>
+            <br>
+            <br>
+            <br>
+            <label for="name" style="color: white;">User name </label>
+            <input type="text" id="name" name="a" placeholder="Enter your name">
+            <br>
+            <br>
+            <label for="password" style="color: white;">password </label>
+            <input type="password" id="password" name="b" placeholder="Enter your password">
+            <br> <br>
+            <label for="age" style="color: white;">age </label>
+            <input type="number" id="age" name="c" placeholder="Enter your age">
+            <br>
+            <br>
+            <label for="mb number" style="color: white;"> Mb number </label>
+            <input type="tel" id="mb number" name="a" placeholder="Enter your mb number" pattern="{6-9}{0-9}"
+                maxlength="10">
+            <br>
+            <br>
+            <label style="color: white;">User gender </label>
+
+            <br>
+            &emsp;&emsp;&emsp; <input type="radio" id="abc" name="aa" value="male">
+            <label for="abc" style="color: white;"> male</label>
+            <br>
+            &emsp;&emsp;&emsp; <input type="radio" id="abc" name="aa" value="female">
+            <label for="abc" style="color: white;"> female</label>
+            <br>
+            &emsp;&emsp;&emsp; <input type="radio" id="abc" name="aa" value="other">
+            <label for="abc" style="color: white;"> other</label>
+
+            <br>
+            <br>
+            <br>
+            <a href="sub_assingment2.html" target="_blank"><button
+                    style="color: rgb(34, 12, 241); border-radius: 30px;"> Book sheet</button> </a>
+
+
+        </div>
+
+        <div
+            style="height: 250px; width: 300px; background-color: rgb(169, 66, 66);  margin-top:100px; margin-left: 100px; border-radius: 30px;">
+            <img src="image.png"
+                style="height:270px; width: 300px; margin-left: 0px; margin-top: auto; border-radius: 30px;">
+
+
+
+        </div>
+    </div>
+
+
+    <button> Book sheet</button>
+
+
     </form>
 </body>
+
 </html>

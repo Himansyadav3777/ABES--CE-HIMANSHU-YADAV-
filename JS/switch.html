@@ -6,9 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+     <p id="adi"> </p>
     <script>
-        var a=1;
-        switch(a){
+       
+        var day;
+        switch (new Date().getDay()) {
+
             case 1: document.write("manday");
             break;
              case 2: document.write("thuesday");
@@ -25,6 +28,8 @@
             break;
             default : document.write("invalid number ");
         }
+document.getElementById("adi").innerHTML="today is"+""+day;
+
     </script>
 </body>
 </html>

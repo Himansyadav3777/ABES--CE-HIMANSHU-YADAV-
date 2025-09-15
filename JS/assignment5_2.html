@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Change</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Change Image with JS</h2>
+
+    <!-- Image -->
+    <div style="text-align:center;">
+        <img id="myImg" src="image.png" >
+        <br><br>
+        <button onclick="changeImg()">Change Image</button>
+    </div>
+
+    <script>
+        var flag = true;
+     
+          var flag = true;
+        function changeImg(){
+            let img = document.getElementById("myImg");
+
+            if(flag){
+                img.src = "image.png";  
+            }else{
+                img.src= "pic2.png" 
+            }
+            flag = !flag; // toggle true/false
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  
+    <title>Document</title>
+    <style>
+        .all{
+            height:400px;
+            width: 400px;
+            background-color: antiquewhite; 
+        margin-top: 100px;
+        margin-left: 500px;
+           
+        }
+        .nav{
+            height: 100px;
+            width: 400px;
+            background-color: pink;
+            display: flex;
+
+
+        }
+        img{
+            height: 80px;
+            border-radius: 50%;
+           width: 80px;
+           width: 80px;
+           margin-left: 20px;
+           padding: 5px;
+        }
+        #text{
+            height: 80px;
+            width: 200px;
+      
+            /* background-color: rgb(126, 25, 25);/ */
+            margin-left: 50px;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+      
+        button{
+            height: 50px;
+            width: 50px;
+        }
+        
+    
+        
+        
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="nav">
+            <div id="img">
+                <img src="image.png">
+            </div>
+\
+            <div id="text"> 
+                <p style="margin-top: 15px;">counter apps</p>
+            </div>
+
+ </div>
+          
+
+ <br> <br>  
+ <br> 
+ <h1 style="text-align: center;"> count</h1>
+
+ <!-- counter -->
+  <h1 id="coun1" style="text-align: center; font-size: 40px;">0</h1>
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button id="a" onclick="ad()">+</button>&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;<button id="b" onclick="sub()">-</button>
+       
+    </div>
+
+    <script>
+
+        var cout=0;
+
+        function ad() {
+            if(cout>9){
+                alert("maximum element element is :");
+                
+            }
+            cout++;
+            document.getElementById("coun1").innerText=cout;
+            }
+
+            // othe function;
+            
+        function sub() {
+            if(cout>0){
+               cout--;
+                
+            }
+           
+            document.getElementById("coun1").innerText=cout;
+              
+            }
+            
+    </script>
+</body>
+</html>

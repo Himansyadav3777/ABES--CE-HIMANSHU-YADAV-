@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#div{
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+
+}
+div,img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+
+}
+button{
+    height: 50px;
+    width: 100px;
+}
+    </style>
+   
+</head>
+<body>
+    <center>
+    <div id="div">
+        <img src="image.png" id="myimg">
+           
+    </div>
+    </center>
+    <center>
+      <button onclick="unhide()"> heigth img</button>
+        <button onclick="sho()"> sho img</button>
+</center>
+    
+     <script>
+        function unhide(){
+            document.getElementById("myimg").style.display="none";  // pic ko heigth karne ke liye kiya jata hai
+            
+        }
+
+        function sho(){
+            document.getElementById("myimg").style.display="inline"; // inline ka use pic ko show karne ke liye use kiya jata hai 
+        }
+    </script>
+</body>
+</html>

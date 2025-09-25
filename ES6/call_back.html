@@ -6,13 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    
     <script>
-        function multi(a,b=1)
-        {
- return a*b;
+        function sum(a,b){
+                    console.log(a+b);
         }
-        
-        document.write(multi(5));
+        function cal(a,b,sumcallback){
+ sumcallback(a,b);
+        }
+        cal(10,20,sum);
     </script>
 </body>
 </html>

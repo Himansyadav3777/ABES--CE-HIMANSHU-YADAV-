@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Name: </label>
+    <input type="text" id="aaa"> 
+    <button onclick="abes()"> Click</button>
+<p id="adi"></p>
+
+    <script>
+        function abes(){  //input  value ko display karene ke liye
+            let x=document.getElementById("aaa");
+            let y=x.value;
+            document.getElementById("adi").innerHTML=y;
+        }
+    </script>
+</body>
+</html>
